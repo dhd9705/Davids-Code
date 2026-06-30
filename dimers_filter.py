@@ -6,14 +6,15 @@ import pandas as pd
 # USER CONFIGURATION PARAMETERS (CONFIGURED FOR HILIC3D)
 # ==============================================================================
 file_dir = r"C:\David_Data\Processed Data\Mzmine_Saliva\FIlter_vs_Extract\HILIC3D\AllLibraries"
-file_name = "HILIC3D_AllLibraries_MSDIAL_Format_Cleaned.csv"
+# file_name = "HILIC3D_AllLibraries_MSDIAL_Format_Cleaned.csv"
 
 max_rt_diff = 0.08           # Max allowed RT discrepancy between rows (minutes)
 ms1_ppm_tolerance = 15.0     # MS1 mass tolerance (ppm)
 proton_mass = 1.007825       # Exact mass of a proton
 # ==============================================================================
 
-file_path = os.path.join(file_dir, file_name)
+# file_path = os.path.join(file_dir, file_name)
+file_path = r"C:\David_Data\Processed Data\Mzmine_Saliva\FIlter_vs_Extract\HILIC3D\AllLibraries\HILIC3D_AllLibraries_MSDIAL_Format_Cleaned.csv"
 
 print("Step 1: Loading aligned HILIC3D dataset...")
 df = pd.read_csv(file_path, sep=None, engine='python')
